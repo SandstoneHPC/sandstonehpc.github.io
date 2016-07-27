@@ -1,0 +1,98 @@
+.navbar .navbar-brand-logo {
+  padding-top: 14px;
+}
+
+.navbar .nav-logo {
+  max-height: 32px;
+}
+
+.navbar .nav > li > a {
+  color: white;
+}
+
+.jumbotron-hero {
+  background-color: white;
+}
+
+/*.jumbotron-hero div.hidden-xs {
+  max-height: 200px;
+  background-image: url('/img/test.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+
+.jumbotron-hero .fa-cloud.fa-cloud-back {
+  font-size: 2.4em;
+  color: #DCEDC8;
+  left: -23px;
+  bottom: -29px;
+}
+
+.jumbotron-hero .fa-cloud.fa-cloud-mid {
+  font-size: 2.7em;
+  color: #AED581;
+  left: -134px;
+  bottom: -119px;
+}
+
+.jumbotron-hero .fa-cloud.fa-cloud-front {
+  font-size: 2.5em;
+  color: #93c54b;
+  left: 138px;
+  bottom: -148px;
+}
+
+.jumbotron-hero .fa-fire {
+  font-size: 1.6em;
+  -ms-transform: rotate(224.7deg);
+  -webkit-transform: rotate(224.7deg);
+  transform: rotate(224.7deg);
+  left: -18px;
+  bottom: -137px;
+}
+
+.jumbotron-hero .fa-flask, .jumbotron-hero .fa-rocket {
+  font-size: 4em;
+  /*-ms-transform: rotate(30deg); /* IE 9 */*/
+  /*-webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */*/
+  /*transform: rotate(30deg);*/
+}
+
+.jumbotron-hero .fa-plus-circle {
+  font-size: 2em;
+  color: #93c54b;
+  left: 190px;
+  bottom: 40px;
+}
+
+.jumbotron-desc {
+  color: white;
+  background-color: #4DD0E1;
+}
+
+.container-actions {
+  padding-top: 20px;
+}
+
+.container-actions .col-action {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.col-action > i {
+  padding: 12px;
+  font-size: 6em;
+}
+
+.col-action > p {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.col-action > p > .btn {
+  background-color: #93c54b;
+}
+
+hr.divider {
+  margin: 80px 0;
+}
