@@ -14,35 +14,36 @@
   background-color: white;
 }
 
-/*.jumbotron-hero div.hidden-xs {
-  max-height: 200px;
-  background-image: url('/img/test.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}*/
+.jumbotron-hero h1 {
+  font-size: 4.2em;
+}
 
 .jumbotron-hero .fa-cloud.fa-cloud-back {
   font-size: 2.4em;
-  color: #DCEDC8;
+  /*color: #DCEDC8;*/
+  color: #CFD8DC;
   left: -23px;
   bottom: -29px;
 }
 
 .jumbotron-hero .fa-cloud.fa-cloud-mid {
   font-size: 2.7em;
-  color: #AED581;
+  /*color: #AED581;*/
+  color: #90A4AE;
   left: -134px;
   bottom: -119px;
 }
 
 .jumbotron-hero .fa-cloud.fa-cloud-front {
   font-size: 2.5em;
-  color: #93c54b;
+  /*color: #93c54b;*/
+  color: #607D8B;
   left: 138px;
   bottom: -148px;
 }
 
 .jumbotron-hero .fa-fire {
+  color: #4DD0E1;
   font-size: 1.6em;
   -ms-transform: rotate(224.7deg);
   -webkit-transform: rotate(224.7deg);
@@ -51,18 +52,9 @@
   bottom: -137px;
 }
 
-.jumbotron-hero .fa-flask, .jumbotron-hero .fa-rocket {
+.jumbotron-hero .fa-rocket {
+  color: #4DD0E1;
   font-size: 4em;
-  /*-ms-transform: rotate(30deg); /* IE 9 */*/
-  /*-webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */*/
-  /*transform: rotate(30deg);*/
-}
-
-.jumbotron-hero .fa-plus-circle {
-  font-size: 2em;
-  color: #93c54b;
-  left: 190px;
-  bottom: 40px;
 }
 
 .jumbotron-desc {
@@ -70,11 +62,46 @@
   background-color: #4DD0E1;
 }
 
+.jumbotron-apps {
+  background-color: white;
+}
+
+.jumbotron-apps .fa-stack {
+  font-size: 7em;
+}
+
+.jumbotron-apps .fa-plus.fa-plus-back {
+  font-size: 1.3em;
+  color: #FFE0B2;
+  left: 296px;
+  bottom: 108px;
+}
+
+.jumbotron-apps .fa-plus.fa-plus-mid {
+  font-size: 1.5em;
+  color: #FFB74D;
+  left: 244px;
+  bottom: 77px;
+}
+
+.jumbotron-apps .fa-plus.fa-plus-front {
+  font-size: 1.7em;
+  color: #FF9800;
+  left: 185px;
+  bottom: 45px;
+}
+
+.jumbotron-def {
+  color: white;
+  background-color: #FF9800;
+}
+
 .container-actions {
   padding-top: 20px;
 }
 
 .container-actions .col-action {
+  margin-top:12px;
   text-align: center;
   font-size: 1.2em;
 }
@@ -91,6 +118,11 @@
 
 .col-action > p > .btn {
   background-color: #93c54b;
+}
+
+h1.app-heading {
+  margin-top: 12px;
+  margin-bottom: 24px;
 }
 
 hr.divider {
