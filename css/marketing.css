@@ -70,25 +70,27 @@
   font-size: 7em;
 }
 
-.jumbotron-apps .fa-plus.fa-plus-back {
-  font-size: 1.3em;
+.jumbotron-apps .fa-stack > img {}
+
+.jumbotron-apps .fa-plus-circle.fa-plus-circle-back {
   color: #FFE0B2;
-  left: 296px;
-  bottom: 108px;
+  font-size: .6em;
+  left: 116px;
+  bottom: 51px;
 }
 
-.jumbotron-apps .fa-plus.fa-plus-mid {
-  font-size: 1.5em;
+.jumbotron-apps .fa-plus-circle.fa-plus-circle-mid {
+  font-size: .8em;
   color: #FFB74D;
-  left: 244px;
-  bottom: 77px;
+  left: 112px;
+  bottom: 111px;
 }
 
-.jumbotron-apps .fa-plus.fa-plus-front {
-  font-size: 1.7em;
+.jumbotron-apps .fa-plus-circle.fa-plus-circle-front {
+  font-size: 1em;
   color: #FF9800;
-  left: 185px;
-  bottom: 45px;
+  left: 58px;
+  bottom: 163px;
 }
 
 .jumbotron-def {
