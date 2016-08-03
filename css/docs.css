@@ -1,0 +1,67 @@
+section.doc {
+  /*color: #616161;*/
+  color: #757575;
+  margin-top: 40px;
+}
+
+section.doc-title > h1 {
+  color: #93C54B;
+}
+
+section.doc-section {
+  margin-top: 40px;
+}
+
+section.doc-section > h1,
+section.doc-section > h2,
+section.doc-section > h3,
+section.doc-section > h4,
+section.doc-section > h5,
+section.doc-section > h6 {
+  color: #93C54B;
+}
+
+section.doc-section > h1 > a:hover,
+section.doc-section > h2 > a:hover,
+section.doc-section > h3 > a:hover,
+section.doc-section > h4 > a:hover,
+section.doc-section > h5 > a:hover,
+section.doc-section > h6 > a:hover {
+  color: #93C54B;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section.doc-section > h1 > a:visited,
+section.doc-section > h2 > a:visited,
+section.doc-section > h3 > a:visited,
+section.doc-section > h4 > a:visited,
+section.doc-section > h5 > a:visited,
+section.doc-section > h6 > a:visited {
+  color: #93C54B;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section.doc-section > h1 > a:active,
+section.doc-section > h2 > a:active,
+section.doc-section > h3 > a:active,
+section.doc-section > h4 > a:active,
+section.doc-section > h5 > a:active,
+section.doc-section > h6 > a:active {
+  color: #93C54B;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section.doc-section > h1 > a:hover::after,
+section.doc-section > h2 > a:hover::after,
+section.doc-section > h3 > a:hover::after,
+section.doc-section > h4 > a:hover::after,
+section.doc-section > h5 > a:hover::after,
+section.doc-section > h6 > a:hover::after {
+  padding-left: 0.5em;
+  font-family: FontAwesome;
+  font-size: .9em;
+  content: "\f0c1";
+}

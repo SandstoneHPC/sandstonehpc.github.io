@@ -14,6 +14,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/bootstrap-sandstone.min.css" rel="stylesheet">
     <link href="/css/marketing.css" rel="stylesheet">
+    <link href="/css/docs.css" rel="stylesheet">
   </head>
 
   <body>
@@ -43,67 +44,24 @@
       </div>
     </div>
     <!-- navbar -->
-    <!-- jumbotron-logo -->
-    <div class="jumbotron jumbotron-hero">
-      <div class="container">
-        <div class="row">
-          <div class="cold-md-6 col-sm-6 col-xs-12">
-            <h1>Be More Productive.</h1>
-            <p>Reduce your time-to-solution with Sandstone HPC.</p>
-            <p><a class="btn btn-success btn-lg" href="#" role="button">Learn more</a></p>
-          </div>
-          <div class="col-md-6 col-sm-6 hidden-xs">
-            <span class="fa-stack fa-5x center-block">
-              <!-- <i class="fa fa-flask fa-stack-2x"></i> -->
-              <i class="fa fa-cloud fa-cloud-back fa-stack-2x"></i>
-              <i class="fa fa-cloud fa-cloud-mid fa-stack-2x"></i>
-              <i class="fa fa-cloud fa-cloud-front fa-stack-2x"></i>
-              <i class="fa fa-rocket fa-stack-2x"></i>
-              <i class="fa fa-fire fa-stack-2x"></i>
-              <!-- <i class="fa fa-plus-circle fa-stack-1x"></i> -->
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- jumbotron-logo -->
-    <!-- jumbotron-desc -->
-    <div class="jumbotron jumbotron-desc">
-      <div class="container">
-        <h2><strong>Sandstone HPC</strong> is a consolidated set of web-based, visual utilities that <strong>facilitate</strong> access to <strong>HPC</strong> resources.</h2>
-      </div>
-    </div>
-    <!-- jumbotron-desc -->
     <!-- primary container -->
-    <div class="container container-actions">
-      <!-- content columns -->
+    <div class="container">
       <div class="row">
-        <div class="col-md-4 col-action">
-          <i class="fa fa-terminal fa-5x"></i>
-          <h1>Install</h1>
-          <p>Get started by installing Sandstone IDE on your system. The Quick Start guide will have you up and running in minutes.</p>
-          <p>
-            <a class="btn btn-default" href="/docs/quick-start.html" role="button">Quick Start »</a>
-          </p>
+        <!-- content -->
+        <div class="col-md-12">
+          <section class="doc doc-title">
+            <h1>Quick Start Guide</h1>
+            <p class="lead">Install Sandstone IDE in minutes.</p>
+          </section>
+          <section class="doc doc-section">
+            <h3><a name="pip-install" href="#pip-install">Install Via Pip</a></h3>
+            <div class="doc-markdown">
+              __TEST__ *hi*
+            </div>
+          </section>
         </div>
-        <div class="col-md-4 col-action">
-          <i class="fa fa-plug fa-5x"></i>
-          <h1>Extend</h1>
-          <p>Sandstone can be extended by a growing selection of apps, each one made to help you get your work done, faster.</p>
-          <p>
-            <a class="btn btn-default" href="/apps.html" role="button">Browse Apps »</a>
-          </p>
-        </div>
-        <div class="col-md-4 col-action">
-          <i class="fa fa-book fa-5x"></i>
-          <h1>Docs</h1>
-          <p>Questions about Sandstone HPC? Check out our documentation for users, admins, and developers.</p>
-          <p>
-            <a class="btn btn-default" href="#" role="button">View Docs »</a>
-          </p>
-        </div>
+        <!-- content -->
       </div>
-      <!-- content columns -->
       <hr class="divider">
       <footer>
         <p>
@@ -115,8 +73,11 @@
       </footer>
     </div>
     <!-- primary container -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/js/marked.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"></script> -->
+    <script src="/js/docs.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -125,7 +86,6 @@
 
       ga('create', 'UA-66182401-2', 'auto');
       ga('send', 'pageview');
-
     </script>
   </body>
 </html>
