@@ -1,7 +1,32 @@
+div.doc-sidebar {
+  background-color: #607D8B;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 64px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.doc-sidebar > p.doc-header {
+  color: #B0BEC5;
+  font-size: 18px;
+}
+
+.doc-sidebar > ul.doc-links {
+  list-style: none;
+}
+
+.doc-sidebar > ul.doc-links > li {
+  margin-left: -16px;
+}
+
+.doc-sidebar > ul.doc-links a {
+  color: white;
+}
+
 section.doc {
-  /*color: #616161;*/
   color: #757575;
-  margin-top: 40px;
 }
 
 section.doc-title > h1 {

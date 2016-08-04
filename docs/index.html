@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/img/favicon-32x32.png">
+
+    <title>Sandstone HPC - Documentation</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-sandstone.min.css" rel="stylesheet">
+    <link href="/css/marketing.css" rel="stylesheet">
+    <link href="/css/docs.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sandstone-nav-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand navbar-brand-logo" href="#">
+            <img class="nav-logo img-responsive img-rounded center-block" alt="Sandstone HPC" src="/img/favicon-32x32.png">
+          </a>
+          <a class="navbar-brand" href="/">
+            <strong>Sandstone</strong>&nbsp;HPC
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="sandstone-nav-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/SandstoneHPC/" target="_blank">GitHub</a></li>
+            <li><a href="https://www.rc.colorado.edu/contact" target="_blank">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+    <!-- primary container -->
+    <div class="container-fluid">
+      <!-- content columns -->
+      <div class="row">
+        <!-- sidebar -->
+        <div class="col-md-2 col-sm-3 hidden-xs doc-sidebar">
+          <p class="doc-header">Getting Started</p>
+          <ul class="doc-links">
+            <li><a href="/docs/">Quick Start</a></li>
+            <li><a href="/docs/core/settings.html">Configuring Sandstone</a></li>
+          </ul>
+        </div>
+        <!-- sidebar -->
+        <!-- main -->
+        <div class="col-md-10 col-sm-9 col-xs-12 col-md-offset-2 col-sm-offset-3 doc doc-main">
+          <!-- doc content -->
+          <section class="doc doc-title">
+            <h1>Quick Start Guide</h1>
+            <p class="lead">Install Sandstone IDE in minutes.</p>
+          </section>
+          <section class="doc doc-section">
+            <h3><a name="pip-install" href="#pip-install">Install Via Pip</a></h3>
+            <div class="doc-markdown">
+To install Sandstone IDE using PIP, run:
+```
+pip install sandstone
+```
+            </div>
+          </section>
+          <section class="doc doc-section">
+            <h3><a name="source-install" href="#source-install">Install From Source</a></h3>
+            <div class="doc-markdown">
+To install Sandstone IDE, first clone the repository and enter the project directory:
+```
+git clone https://github.com/SandstoneHPC/sandstone-ide.git
+cd sandstone-ide
+```
+Then, build the dependencies for the front-end components:
+```
+cd sandstone/client
+npm install
+```
+Switch back to the project root and install the python package (a virtualenv is recommended):
+```
+python setup.py install
+```
+            </div>
+          </section>
+          <section class="doc doc-section">
+            <h3><a name="run-sandstone" href="#run-sandstone">Run Sandstone IDE</a></h3>
+            <div class="doc-markdown">
+Sandstone IDE can now be run with the following command:
+```
+sandstone
+```
+To use Sandstone IDE, point your browser to `localhost:8888`. For documentation on how to configure Sandstone to run over SSL or on a different port, read about [configuring Sandstone settings](/docs/core/settings.html).
+            </div>
+          </section>
+          <!-- doc content -->
+          <hr class="divider">
+          <footer>
+            <p>
+              &copy; 2016 Research Computing &middot;
+              <a href="https://www.rc.colorado.edu/" target="_blank">RC at CU Boulder</a>
+              &middot;
+              <a href="#">Terms</a>
+            </p>
+          </footer>
+        </div>
+        <!-- main -->
+      </div>
+      <!-- content columns -->
+    </div>
+    <!-- primary container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+    <script src="/js/marked.min.js"></script>
+    <script src="/js/docs.js"></script>
+    <!-- <script src="/js/analytics.js"></script> -->
+  </body>
+</html>
