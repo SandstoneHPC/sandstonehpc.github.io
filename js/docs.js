@@ -3,8 +3,10 @@
 (function renderMarkdown() {
   marked.setOptions({
     gfm: true,
-    highlight: function (code) {
-      console.log(code);
+    highlight: function (code, lang) {
+      if (typeof lang === 'undefined') {
+        return code;
+      }
       return hljs.highlightAuto(code).value;
     }
   });
