@@ -102,11 +102,11 @@
   background-color: #4DD0E1;
 }
 
-.container-actions {
+.container-primary {
   padding-top: 20px;
 }
 
-.container-actions .col-action {
+.container-primary .col-action {
   margin-top:12px;
   text-align: center;
   font-size: 1.2em;

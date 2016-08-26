@@ -1,0 +1,17 @@
+{
+  "outputDir": ".",
+  "templateDir": "build",
+  "render": [
+    "**/*"
+  ],
+  "ignore": [
+    "rehydrator-conf.json",
+    "build",
+    "build/**/*",
+    ".git/**/*",
+    ".gitignore",
+    "img",
+    "img/**/*",
+    "requirements.txt"
+  ]
+}

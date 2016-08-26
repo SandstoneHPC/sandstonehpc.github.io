@@ -1,0 +1,68 @@
+{% extends "tpl/base.html" %}
+
+{% block title %}Sandstone HPC - Get Started{% endblock title %}
+
+{% block jumbotron %}
+<!-- jumbotron-logo -->
+<div class="jumbotron jumbotron-hero">
+  <div class="container">
+    <div class="row">
+      <div class="cold-md-6 col-sm-6 col-xs-12">
+        <h1>Be More Productive.</h1>
+        <p>Reduce your time-to-solution with Sandstone HPC.</p>
+        <p><a class="btn btn-success btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+      <div class="col-md-6 col-sm-6 hidden-xs">
+        <span class="fa-stack fa-5x center-block">
+          <!-- <i class="fa fa-flask fa-stack-2x"></i> -->
+          <i class="fa fa-cloud fa-cloud-back fa-stack-2x"></i>
+          <i class="fa fa-cloud fa-cloud-mid fa-stack-2x"></i>
+          <i class="fa fa-cloud fa-cloud-front fa-stack-2x"></i>
+          <i class="fa fa-rocket fa-stack-2x"></i>
+          <i class="fa fa-fire fa-stack-2x"></i>
+          <!-- <i class="fa fa-plus-circle fa-stack-1x"></i> -->
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jumbotron-logo -->
+<!-- jumbotron-desc -->
+<div class="jumbotron jumbotron-desc">
+  <div class="container">
+    <h2><strong>Sandstone HPC</strong> is a consolidated set of web-based, visual utilities that <strong>facilitate</strong> access to <strong>HPC</strong> resources.</h2>
+  </div>
+</div>
+<!-- jumbotron-desc -->
+{% endblock jumbotron %}
+
+{% block inner_content %}
+<!-- content columns -->
+<div class="row">
+  <div class="col-md-4 col-action">
+    <i class="fa fa-terminal fa-5x"></i>
+    <h1>Install</h1>
+    <p>Get started by installing Sandstone IDE on your system. The Quick Start guide will have you up and running in minutes.</p>
+    <p>
+      <a class="btn btn-default" href="/docs/quick-start.html" role="button">Quick Start »</a>
+    </p>
+  </div>
+  <div class="col-md-4 col-action">
+    <i class="fa fa-plug fa-5x"></i>
+    <h1>Extend</h1>
+    <p>Sandstone can be extended by a growing selection of apps, each one made to help you get your work done, faster.</p>
+    <p>
+      <a class="btn btn-default" href="/apps.html" role="button">Browse Apps »</a>
+    </p>
+  </div>
+  <div class="col-md-4 col-action">
+    <i class="fa fa-book fa-5x"></i>
+    <h1>Docs</h1>
+    <p>Questions about Sandstone HPC? Check out our documentation for users, admins, and developers.</p>
+    <p>
+      <a class="btn btn-default" href="/docs/" role="button">View Docs »</a>
+    </p>
+  </div>
+</div>
+<!-- content columns -->
+{% endblock inner_content %}
