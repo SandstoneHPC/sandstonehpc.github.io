@@ -1,0 +1,18 @@
+# Dependencies
+markdown:         redcarpet
+redcarpet:
+  extensions:     [with_toc_data]
+highlighter:      pygments
+
+# Setup
+title:            Sandstone HPC
+baseurl:          /
+
+author:
+  name:           'Zebula Sampedro'
+  url:            https://sandstonehpc.github.io/
+
+collections:
+  docs:
+    output:       true
+    permalink:    /docs/:path/
