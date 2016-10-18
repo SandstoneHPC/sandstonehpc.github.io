@@ -39,6 +39,12 @@ section.doc-section {
 
 section.doc-section > h1,
 section.doc-section > h2,
+section.doc-section > h3 {
+  margin-top: 40px;
+}
+
+section.doc-section > h1,
+section.doc-section > h2,
 section.doc-section > h3,
 section.doc-section > h4,
 section.doc-section > h5,
