@@ -1,6 +1,6 @@
 ---
 layout: docs/doc-page
-permalink: /docs/test/
+permalink: /docs/
 title: Quick Start Guide
 description: Install Sandstone IDE in minutes.
 ---
