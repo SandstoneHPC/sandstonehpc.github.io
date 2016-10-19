@@ -1,9 +1,13 @@
+body.doc-body {
+  padding-top: 62px;
+}
+
 div.doc-sidebar {
   background-color: #607D8B;
   color: white;
   padding: 20px;
   position: fixed;
-  top: 64px;
+  top: 62px;
   left: 0px;
   bottom: 0px;
 }
