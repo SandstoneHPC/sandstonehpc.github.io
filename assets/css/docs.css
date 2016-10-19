@@ -41,6 +41,19 @@ section.doc-section {
   margin-top: 40px;
 }
 
+/*
+ * Fix anchor link scrolling problem
+ */
+section.doc-section > h1:before,
+section.doc-section > h2:before,
+section.doc-section > h3:before {
+  display: block;
+  content: " ";
+  margin-top: -74px;
+  height: 74px;
+  visibility: hidden;
+}
+
 section.doc-section > h1,
 section.doc-section > h2,
 section.doc-section > h3 {
