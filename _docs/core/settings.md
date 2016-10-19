@@ -1,6 +1,6 @@
 ---
 layout: docs/doc-page
-title: Configuring Sandstone
+title: Configuring Sandstone IDE
 description: Customize your installation
 ---
 
