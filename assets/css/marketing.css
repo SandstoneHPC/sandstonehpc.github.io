@@ -1,3 +1,7 @@
+body {
+  padding-top: 62px;
+}
+
 .navbar.navbar-default {
   border-radius: 0px;
 }
@@ -47,7 +51,8 @@
 }
 
 .jumbotron-hero .fa-fire {
-  color: #4DD0E1;
+  /*color: #4DD0E1;*/
+  color: #93C54B;
   font-size: 1.6em;
   -ms-transform: rotate(224.7deg);
   -webkit-transform: rotate(224.7deg);
@@ -57,13 +62,15 @@
 }
 
 .jumbotron-hero .fa-rocket {
-  color: #4DD0E1;
+  /*color: #4DD0E1;*/
+  color: #93C54B;
   font-size: 4em;
 }
 
 .jumbotron-desc {
   color: white;
-  background-color: #4DD0E1;
+  /*background-color: #4DD0E1;*/
+  background-color: #607D8B;
 }
 
 .jumbotron-apps {
@@ -103,11 +110,75 @@
   background-color: #4DD0E1;
 }
 
+/*
+ * Carousel styles
+ */
+.carousel-control.left,
+.carousel-control.right {
+  color: black;
+  background-image: none;
+}
+
+.carousel-indicators > li {
+  border: 1px solid black;
+}
+
+.carousel-indicators > li.active {
+  background-color: black;
+}
+
+.carousel-inner > .item {
+  text-align: center;
+}
+
+/*
+ * Feature styles
+ */
+.jumbotron.feature {
+  margin-bottom: 0px;
+}
+
+.feature {
+  background-color: white;
+}
+
+.feature-primary {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature-r {
+  text-align: right;
+}
+
+.feature-l {
+
+}
+
+.feature-fill {
+  background-color: #607D8B;
+  color: white;
+}
+
+.feature-fill-light {
+  background-color: #F1F1F1;
+  color: #3e3f3a;
+}
+
+.feature-graphic {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.feature-graphic > img {
+
+}
+
 .container-primary {
   padding-top: 20px;
 }
 
-.container-primary .col-action {
+.col-action {
   margin-top:12px;
   text-align: center;
   font-size: 1.2em;
