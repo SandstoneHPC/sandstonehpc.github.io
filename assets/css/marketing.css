@@ -139,11 +139,10 @@ body {
 }
 
 .feature {
-  background-color: #F1F1F1;
-  /*background-color: white;*/
+  background-color: white;
 }
 
-.feature-primary .feature-caption {
+.feature-primary {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -161,6 +160,11 @@ body {
   color: white;
 }
 
+.feature-fill-light {
+  background-color: #F1F1F1;
+  color: #3e3f3a;
+}
+
 .feature-graphic {
   max-height: 500px;
   overflow: hidden;
@@ -174,7 +178,7 @@ body {
   padding-top: 20px;
 }
 
-.container-primary .col-action {
+.col-action {
   margin-top:12px;
   text-align: center;
   font-size: 1.2em;
