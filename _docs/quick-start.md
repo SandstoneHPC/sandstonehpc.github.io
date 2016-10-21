@@ -5,13 +5,6 @@ title: Quick Start Guide
 description: Install Sandstone IDE in minutes.
 ---
 
-### Install Via Pip
-To install Sandstone IDE using PIP, run:
-
-```
-pip install sandstone
-```
-
 ### Install From Source
 To install Sandstone IDE, first clone the repository and enter the project directory:
 
