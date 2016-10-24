@@ -91,12 +91,78 @@ FORM_CONFIG = {
 ```
 
 #### features
-Under development
+_Under development._
 
 #### gres
-Under development
+_Under development._
 
 #### profiles
 This is a dictionary mapping short, descriptive names to a particular set of configuration overrides and defaults. The keys in the `profiles` dictionary will populate the _Select Profile_ field presented to the user at the top of the schedule form.
 
 ### Configuring a profile
+The following section will explain how to create a custom profile to add to your `FORM_CONFIG`.
+
+#### Overriding Properties
+Properties set in the `properties` dictionary of a profile's `schema` can be partially, or completely modified. Any attribute declared in a property's definition will be used to patch that property's definition for the specified profile only. Unaltered properties will be populated using Base Schema only. An [example configuration](#example-profile) can be found below.
+
+#### Initial Properties
+Properties declared in a profile's `initial` list will be automatically added to the schedule form when a user selects that profile. The user will be able to remove the field. Any default values configured for the property will be used to populate the form field, if the form field has no current value.
+
+#### Required Properties
+Properties declared in the `required` list of a profile's `schema` dictionary will be automatically added to the schedule form when a user selects that profile. **The user will not be able to remove the field.** Any default values configured for the property will be used to populate the form field, if the form field has no current value.
+
+#### Default Values
+If a property contains the `default` attribute, the specified value will be used to populate the associated form field when it is added to the schedule form. This value will not overwrite existing form data, unless `readonly` is set to `True`.
+
+#### Read-Only Properties
+If the `readonly` attribute of a property is set to `True`, the user will not be able to modify the value of the associated form field. When the user switches profiles, the `default` value of a `readonly` property will **overwrite existing form data**.
+
+#### Example Profile
+Below is an example profile configuration:
+
+```python
+FORM_CONFIG = {
+    # ...
+    'profiles': {
+    'janus-debug': {
+            # Form is prepopulated with these fields (can be empty)
+            'initial': [
+                'time',
+            ],
+            # Schema specified here will be used to patch base schema (can be empty)
+            'schema': {
+                "properties": {
+                    "qos": {
+                        "readonly": True,
+                        "default": "janus-debug",
+                    },
+                    "partition": {
+                        "readonly": True,
+                    },
+                    "cluster": {
+                        "readonly": True,
+                    },
+                    "nodes": {
+                        "default": 1,
+                    },
+                    "time": {
+                        "subtype": "duration",
+                        "pattern": '^(\d+-)?(\d+):(\d+):(\d+)$',
+                        "default": "00:30:00",
+                        "maxDuration": 60,
+                        # IMPORTANT: The description attribute is used to populate the help text
+                        # for the associated form field.
+                        "description": "Custom help text for this property."
+                    },
+                },
+                # Form must contain these fields (can be empty)
+                'required': [
+                    'qos',
+                    'nodes',
+                ]
+            }
+        },
+        # ...
+    }
+}
+```
