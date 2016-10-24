@@ -166,3 +166,5 @@ FORM_CONFIG = {
     }
 }
 ```
+
+A more complete example configuration can be found in [sandstone-config](https://github.com/ResearchComputing/sandstone-config/blob/master/sandstone_settings.py).
