@@ -4,15 +4,42 @@ title: Configuring Slurm Assist
 description: How to configure the schedule form to work with your Slurm installation
 ---
 
-## Configuring the Schedule Form
+## Overview
 The schedule form in Slurm Assist is built to be highly-configurable, and accommodate nearly any Slurm setup. This is accomplished by representing Sbatch options with an extended interpretation of [JSON Schema v4](http://json-schema.org/latest/json-schema-core.html). This schema is used to dynamically define and validate the sbatch options exposed to the user.
 
-### Base Schema
+## Base Schema
+The _Base Schema_ is the core JSON schema in Slurm Assist, and it contains all the configuration necessary to represent and validate the [Slurm Sbatch options](http://slurm.schedmd.com/sbatch.html). Any custom properties you define will draw their initial attributes from the Base Schema, however the Base Schema is not intended to be directly modified. Alterations should instead be made by overriding schema properties in your [`FORM_CONFIG`](#form-config). Below is an abbreviated example of what the Base Schema looks like:
 
-### Extensions to JSON Schema v4
+```python
+BASE_CONFIG = {
+        "type": "object",
+        "title": "SlurmConfig",
+        "properties": {
+            "account": {
+                'title': "account",
+                "type":"string",
+                "enum": user_accounts,
+                'description': 'Charge resources used by this job to specified account...',
+            },
+            "time": {
+                      "title": "time",
+                      "type": "string",
+                      "subtype": "duration",
+                      "pattern": '^(\d+-)?(\d+):(\d+):(\d+)$',
+                      "minDuration": 0,
+                      'description': 'Set a limit on the total run time of the job allocation. If the requested time limit exceeds the partition\'s time limit...',
+                  },
+            # ...
+        }
+}
+```
+
+The complete Base Schema can be found in the Slurm Assist [settings file](https://github.com/SandstoneHPC/sandstone-slurm-assist/blob/master/sandstone_slurm/settings.py).
+
+## Extensions to JSON Schema v4
 Slurm Assist adds the concept of _subtypes_ to JSON Schema, which supplements the existing [type options](http://json-schema.org/latest/json-schema-core.html#anchor8) to provide richer form content. Each subtype is added to a primitive type to extend the capabilities of that property. Below is a listing of supported subtypes:
 
-#### duration
+### duration
 Slurm accepts many different formats when specifying time and duration, which makes validating time strings via regex impractical. To resolve this, the _duration_ subtype was added to extend the _string_ primitive type. This subtype treats a duration as an **optionally** bounded integer representing CPU minutes.
 
 **Supported Time Formats**
@@ -29,10 +56,47 @@ The following are time formats supported by the duration subtype. These options 
 * `minDuration: <value>` _(optional)_ The minimum valid duration, where _value_ is an integer representing CPU minutes.
 * `maxDuration: <value>` _(optional)_ The maximum valid duration, where _value_ is an integer representing CPU minutes.
 
-#### filepath
+### filepath
 The _filepath_ subtype extends the _string_ primitive type, and allows file paths to be selected with a filetree input instead of the user needing to manually specify a filepath.
 
 **Extended Attributes**
 
 * `subtype: filepath` _(required)_
 * `dironly: <boolean>` _(optional) Default: False_ If set to True, only directories can be selected for the input.
+
+## Configuring the Schedule Form
+The following section will guide you through configuring the schedule form to work with your local Slurm installation.
+
+### Form Config
+Start by adding the `FORM_CONFIG` setting to your local [Sandstone settings file](/docs/core/settings/). The basic structure of the _Form Config_ settings is as follows:
+
+```python
+FORM_CONFIG = {
+    # [<str: feature1>, <str: feature2>]
+    'features': [],
+    # [(<str: gname>, <str: type>, <int (optional): count>), ...]
+    'gres': [],
+    # Site-specific queue config
+    'profiles': {
+      # '<profile-name>': {
+      #     initial: [<str (optional): initial_prop1, ...],
+      #     schema: {
+      #         prop1: {
+      #             <Your prop attribute overrides here>
+      #         }
+      #     }
+      # }, ...
+      }
+    }
+```
+
+#### features
+Under development
+
+#### gres
+Under development
+
+#### profiles
+This is a dictionary mapping short, descriptive names to a particular set of configuration overrides and defaults. The keys in the `profiles` dictionary will populate the _Select Profile_ field presented to the user at the top of the schedule form.
+
+### Configuring a profile
