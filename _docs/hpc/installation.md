@@ -44,7 +44,7 @@ INSTALLED_APPS = (
 )
 ```
 
-For documentation on how to configure Slurm Assist for your site, read about [configuring Slurm Assist](/docs/hpc/configuring-slurm-assist/).
+For documentation on how to configure Slurm Assist for your site, read about [configuring Slurm Assist](/docs/hpc/configuring-slurm/).
 
 ### Installing NBTerm
 
@@ -66,6 +66,12 @@ Lastly, navigate to the repository root and install the python package (a virtua
 ```
 cd ..
 python setup.py install
+```
+
+Install the Jupyter BASH kernel:
+
+```
+python -m bash_kernel.install
 ```
 
 Now, add `'sandstone_nbterm'` to the `INSTALLED_APPS` settings tuple in your `sandstone_settings.py` file. [Settings Documentation](/docs/core/settings/#available-settings).

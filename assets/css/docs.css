@@ -42,7 +42,8 @@ section.doc-section {
  */
 section.doc-section > h1:before,
 section.doc-section > h2:before,
-section.doc-section > h3:before {
+section.doc-section > h3:before,
+section.doc-section > h4:before {
   display: block;
   content: " ";
   margin-top: -74px;
