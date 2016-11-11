@@ -1,6 +1,7 @@
 ---
 layout: docs/doc-page
 permalink: /docs/
+disqus_id: core-quick-start
 title: Quick Start Guide
 description: Install Sandstone IDE in minutes.
 ---

@@ -1,5 +1,6 @@
 ---
 layout: docs/doc-page
+disqus_id: hpc-configuring-slurm
 title: Configuring Slurm Assist
 description: How to configure the schedule form to work with your Slurm installation
 ---

@@ -1,5 +1,6 @@
 ---
 layout: docs/doc-page
+disqus_id: hpc-install-hpc
 title: Installing HPC Extensions
 description: How to add Slurm assist and NBTerm to Sandstone IDE
 ---

@@ -1,5 +1,6 @@
 ---
 layout: docs/doc-page
+disqus_id: core-settings
 title: Configuring Sandstone IDE
 description: Customize your installation
 ---
