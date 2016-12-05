@@ -21,6 +21,13 @@ cd sandstone/client
 npm install
 ```
 
+For OSX users that don't have ```npm``` installed please make sure to have homebrew installed first.  After installing homebrew, you can then install the Node Package Manager (NPM) 
+with the following homebrew command
+
+```
+brew install npm
+```
+
 Switch back to the project root and install the python package (a virtualenv is recommended):
 
 ```
