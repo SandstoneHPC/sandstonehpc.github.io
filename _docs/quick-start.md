@@ -19,6 +19,7 @@ Then, build the dependencies for the front-end components:
 ```
 cd sandstone/client
 npm install
+bower install
 ```
 
 Switch back to the project root and install the python package (a virtualenv is recommended):
