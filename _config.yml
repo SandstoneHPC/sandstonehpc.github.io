@@ -12,8 +12,3 @@ baseurl:          /
 author:
   name:           'Zebula Sampedro'
   url:            https://sandstonehpc.github.io/
-
-collections:
-  docs:
-    output:       true
-    permalink:    /docs/:path/
